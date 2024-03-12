@@ -1,42 +1,71 @@
-let score = 33 // this is number
+// conversion into numbers starts here -------------------------------------
 
-console.log(typeof score) // will give us output number
-console.log(typeof (score)) // will give us output number
-// above both methods of typeof do same task and gives us same result
+let score = "33";
+let score2 = "33abc";
+let boolScore = true;
+let varCheck = NaN;
+let varCheck2 = undefined;
+let varCheck3 = null;
 
-let score2 = "33abc" // this is string
-let valueInNumber = Number(score2)
-console.log(typeof valueInNumber)
-console.log(valueInNumber) // it will gives us NaN output
+let conScore = Number(score);
+console.log(typeof score);
+console.log(typeof conScore);
+console.log(conScore);
+console.log();
 
-score = "hitesh"
+let conScore2 = Number(score2);
+console.log(typeof score2);
+console.log(typeof conScore2);
+console.log(conScore2);
+console.log();
 
-//console.log(typeof score);
-//console.log(typeof(score));
+let conboolScore = Number(boolScore);
+console.log(typeof boolScore);
+console.log(typeof conboolScore);
+console.log(conboolScore);
+console.log();
 
-valueInNumber = Number(score)
-//console.log(typeof valueInNumber);
-//console.log(valueInNumber);
+let convarCheck = Number(varCheck);
+console.log(typeof varCheck);
+console.log(typeof convarCheck);
+console.log(convarCheck);
+console.log();
 
+let convarCheck2 = Number(varCheck2);
+console.log(typeof varCheck2);
+console.log(typeof convarCheck2);
+console.log(convarCheck2);
+console.log();
 
-// "33" => 33
-// "33abc" => NaN
-//  true => 1; false => 0
+let convarCheck3 = Number(varCheck3);
+console.log(typeof varCheck3);
+console.log(typeof convarCheck3);
+console.log(convarCheck3);
+console.log();
 
-let isLoggedIn = "hitesh"
+// conversion into numbers ends here ------------------------------------
 
-let booleanIsLoggedIn = Boolean(isLoggedIn)
-//  console.log(booleanIsLoggedIn);
+// conversion into boolean starts here ----------------------------------
+let isLoggedIn = 1;
+// let isLoggedIn = 0;
+// let isLoggedIn = "rishabh";
+// let isLoggedIn = ""; // empty string
+let booleanIsLoggedIn = Boolean(isLoggedIn);
+console.log(typeof booleanIsLoggedIn);
+console.log(booleanIsLoggedIn);
+console.log();
 
+// output of all the conditions(all the commented conditions above) if we convert them to boolean
 // 1 => true; 0 => false
-// "" => false
-// "hitesh" => true
+// "rishabh" => true
+// " " => false
+// conversion into boolean ends here -------------------------------------
 
-let someNumber = 33
-
-let stringNumber = String(someNumber)
-// console.log(stringNumber);
-// console.log(typeof stringNumber);
+// conversion into string starts here ------------------------------------
+let someNumber = 33;
+let stringNumber = String(someNumber);
+console.log(typeof stringNumber);
+console.log(stringNumber);
 
 // *********************** Operations ***********************
 
@@ -77,3 +106,5 @@ console.log(gameCounter);
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+
+// js is not strict so please do not rely on numbers
