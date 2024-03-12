@@ -66,12 +66,14 @@ let someNumber = 33;
 let stringNumber = String(someNumber);
 console.log(typeof stringNumber);
 console.log(stringNumber);
+console.log();
 
-// *********************** Operations ***********************
+// ***************************** Operations ***************************** //
 
+console.log("***Operations***");
 let value = 3
-let negValue = -value
-// console.log(negValue);
+let negValue = -value;
+console.log(negValue);
 
 // console.log(2+2);
 // console.log(2-2);
@@ -82,26 +84,28 @@ let negValue = -value
 
 let str1 = "hello"
 let str2 = " hitesh"
-
 let str3 = str1 + str2
-// console.log(str3);
+console.log(str3);
 
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+console.log("1" + 2);      // o/p --> 12
+console.log(1 + "2");      // o/p --> 12
+console.log("1" + 2 + 2);  // o/p --> 122
+console.log(1 + 2 + "2");  // o/p --> 32  and this confusing, javascript did this due to some internal functionalities or say rules
+// note: don't depend upon these types of expressions follow clean code writing techniquies.
+// if we write code like above then it will be considered as a bad way of writing the code.
 
-// console.log( (3 + 4) * 5 % 3);
+console.log( (3 + 4) * 5 % 3);  // this is also confusing so try to avoid these types of situations where we write this type of confusing code. it is better to seperate the operations by () or perform in seperate lines
 
-// console.log(+true);
-// console.log(+"");
+console.log(+true); // o/p --> 1
+// console.log(true+); it will give us error
+console.log(+""); // o/p --> 0, because output of empty string is false which is 0 ultimately
 
 let num1, num2, num3
 
-num1 = num2 = num3 = 2 + 2
+num1 = num2 = num3 = 2 + 2 // this is also a bad way of writing code
 
 let gameCounter = 100
-++gameCounter;
+++gameCounter;         // just an example of prefix increment
 console.log(gameCounter);
 
 // link to study
