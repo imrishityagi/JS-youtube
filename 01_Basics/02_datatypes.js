@@ -18,7 +18,7 @@ let isLoggedIn = false // boolean
 // string => use always double "" (not mandatory we can even use '' also)
 // boolean => true/false
 // null => it a datatype as well as a standalone value or say type (null means absence of value)
-   // null is a representation of empty value but remember if we say is this a emplty value suppose this => let name = "" so here these empty quotes does't specify the empty value, its a string type not a null type
+   // null is a representation of empty value but remember if we say is this a empty value suppose this => let name = "" so here these empty quotes does't specify the empty value, its a string type, not a null type
    // example of null - we requested temperature from server and server returened 0 because of some issue then it is not a good idea to send 0 back because 0 is also a temperature. so in this case null will be sent back to show that there is some error that's why the null value is sent back
 // undefined => where value is not defined or say the value is not assigned till now
 // symbol => it is used to find uniqueness or say used to differeciate the components 
