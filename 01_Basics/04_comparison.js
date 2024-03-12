@@ -27,3 +27,4 @@ console.log(undefined <= 0); // false
 console.log("2" === 2); // compares the value as well as data type
 
 // so remember that comparisons and equality checker both works differently in js
+// always try to avoid the comparisons like we did above, try to write clean and to the point code
