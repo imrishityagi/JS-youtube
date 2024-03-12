@@ -1,0 +1,22 @@
+-Data types are classifies into 2 categories in js. 
+
+-And this classification is done on the basis how the data is stored in the memory and accessed from the memory.
+
+-There are 2 types of data types in js:
+
+1. Primitive - these all are called by value [reference of the memory is not passed, seperate copy is provided]
+   
+   Total are 7 types under this category:
+   1. String
+   2. Number
+   3. Boolean
+   4. null          ----> it means empty  |  null does not mean 0, not empty string it just means 'bilkul khali'
+   5. undefined     ----> variable declared but value is not provided
+   6. Symbol        ----> used to make something unique
+   7. BigInt        ----> this is used where value is too large like scientific numbers
+
+2. Non-Primitive OR Reference types - whose reference in the memory can be provided
+
+   1. Array,
+   2. Objects
+   3. Functions
