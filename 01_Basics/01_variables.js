@@ -3,7 +3,7 @@
 
 // how to declare variables in javascript:
 // there are two ways to declare variable in js
-// 1 - constant
+// 1 - constant   ----> 1 - const -- const is used to declare the constants variables in js
 // 2 - variable   ----> 1 - var -- var was used in older days of js to declare variables but it has one problem which is of block scope and it is oudated way to declare variables in js
 //                ----> 2 - let -- this is the alternative of var keyword in js and is the ongoing way to declare variables in js
 
@@ -45,4 +45,4 @@ if (true) {
   console.log(blockScopedVariable); // Error: blockScopedVariable is not defined
 //In this case, attempting to access blockScopedVariable outside the block results in an error because let is block-scoped, and the variable is not accessible outside the if block.
 
-// imp note -> prefer not to use var because of the problem of block scope and functional scope. 
+// imp note -> prefer not to use var because of the problem of block scope and functional scope.
