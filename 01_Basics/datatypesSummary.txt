@@ -57,3 +57,37 @@ note: Functions can also be treated as a variable in JS
 
 we can check type of any variable by using typeof  --> console.log(typeof bigNumber);
 In JavaScript, non-primitive data types, including objects, arrays, and functions, are all considered to be of type "object" when checked using the typeof operator
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+About memory in JS:
+
+Stack (Primitive)      in case of primitive types - Stack memory is used   
+                  -->  if a variable is declared in Stack memory then we get copy of that variable
+                  --> any change made, is made on copy not on the original value
+
+let name = "Rishabh"
+let anotherName = name    original value is not provided of name, anotherName will get copy of name
+anotherName = "Pradeep"
+console.log(name)               o/p --> Rishabh
+console.log(anotherName)        o/p --> Pradeep
+
+Heap (Non-primitive)   in case of non-primitive types - Heap memory is used
+                  -->  if an object is declared in Heap memory then we get reference of that memory
+                  --> any change made, made on original value
+
+let userOne {
+   email: "rishabh@gamil.com"
+   upi:   "rishabh@ybl"
+}
+
+let userTwo = userOne       --> here reference of memory is passed to the userTwo of userOne
+
+userTwo.email = "pradeep@google.com";
+
+console.log(userOne.email)
+console.log(userTwo.email)      both of above line will give the same output
+
+note:  actual data of non primitive data type is stored in Heap and there variable like userOne | userTwo is stored in Stack only and reference to the memory is mapped with there variable names.
