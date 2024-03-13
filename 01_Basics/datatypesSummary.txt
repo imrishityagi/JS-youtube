@@ -4,7 +4,7 @@
 
 -There are 2 types of data types in js:
 
-1. Primitive - these all are called by value [reference of the memory is not passed, seperate copy is provided]
+1. Primitive - these all are called by value [reference of the memory is not passed, seperate copy is provided] and any change we made, is made in the copy only - not in the original value.
    
    Total are 7 types under this category:
    1. String
@@ -15,8 +15,45 @@
    6. Symbol        ----> used to make something unique
    7. BigInt        ----> this is used where value is too large like scientific numbers
 
+JavaScript is dynamically typed language so we do not need to define the type of variable in JS.
+eg:
+    let score = 100;  --> this is of number type
+    const finalScore = 103.25;   --> this is also a number type
+
+    const isLoggedIn = false;  --> this is boolean type
+    const outSideTemp = null;  --> this will give us null as output and it is of Object type
+    const userEmai;  --> this is of type undefined
+
+    const bigNumber = 567595474558414n  --> this is a BigInt (add a n at the last of the number to make it BigInt)
+
+Symbol eg:
+    const id = Symbol('123');
+    const anotherId = Symbol('123')
+    note: both the values in above Symbol are same but both are different means - console.log(id === anotherId);  o/p --> false
+    will learn more about symbols in later chapters.
+
 2. Non-Primitive OR Reference types - whose reference in the memory can be provided
 
    1. Array,
    2. Objects
    3. Functions
+
+   const heroes = ["shaktiman", "naagraj", "doga"];  --> this is an Array | Arrays are a specialized type of object in JavaScript used to store ordered lists of values. The array data type is a subtype of the object data type.
+
+   let myObj = {
+         name: "rishabh",
+         age: 22,
+         address: "doon"
+      }                      --> this an example of objects (Objects basically comes in key value pairs)
+                             --> The object data type represents a collection of key-value pairs. Objects in JavaScript are versatile  and can hold various types of data.
+
+const myFun = function() {
+                  console.log("Hello World");
+               }
+
+note: Functions can also be treated as a variable in JS
+      Functions return Function if we do typeof and Functions are called as Function Object
+      Functions in JavaScript are also a type of object. The function data type is a subtype of the object data type. Functions can be assigned to variables, passed as arguments, and returned from other functions.
+
+we can check type of any variable by using typeof  --> console.log(typeof bigNumber);
+In JavaScript, non-primitive data types, including objects, arrays, and functions, are all considered to be of type "object" when checked using the typeof operator
