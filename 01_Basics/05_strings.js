@@ -75,5 +75,6 @@ console.log(str12.includes("rishabh")); // Output: "true"
 const str13 = "rishabh-tyagi-dehradun";
 console.log(str13.split('-')); // Output: "[ 'rishabh', 'tyagi', 'dehradun' ]"
 
-// note: make a article covering all the string methods to learn more in detail
+// notes: make a article covering all the string methods to learn more in detail
 // strings are the very powerful in any language so learn in depth about strings
+// there are 2 things associated with String object 1 is methods which have () at the end and the other is properties which does not have ()
