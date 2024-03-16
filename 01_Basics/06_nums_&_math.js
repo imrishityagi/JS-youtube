@@ -80,8 +80,51 @@ console.log(Number.MIN_SAFE_INTEGER); // Output: -9007199254740991
 
 
 // JavaScript provides the Math object, which contains a set of properties and methods for performing mathematical operations. Here's an overview of some commonly used properties and methods of the Math object:
+// 1. Math.PI: Represents the mathematical constant π (pi), which is approximately equal to 3.14159.
+console.log(Math.PI); // Output: 3.141592653589793
 
+// 2. Math.E: Represents the base of natural logarithms, approximately equal to 2.718.
+console.log(Math.E); // Output: 2.718281828459045
 
+// 3. Math.abs(x): Returns the absolute value of a number x.
+console.log(Math.abs(-10)); // Output: 10
+
+// 4. Math.round(x): Returns the value of a number x rounded to the nearest integer.
+console.log(Math.round(4.6)); // Output: 5
+
+// 5. Math.ceil(x): Returns the smallest integer greater than or equal to a number x.
+console.log(Math.ceil(4.2)); // Output: 5
+
+// ceil takes ceiling value like 4.2 ka 5, 5.6 ka 6, 7.3 ka 8
+// floor take floor value like 4.2 ka 4, 5.6 ka 5, 7.3 ka 7 etc.
+
+// 6. Math.floor(x): Returns the largest integer less than or equal to a number x.
+console.log(Math.floor(4.9)); // Output: 4
+
+// 7. Math.sqrt(x): Returns the square root of a number x.
+console.log(Math.sqrt(25)); // Output: 5
+
+// 8. Math.pow(x, y): Returns the base x raised to the exponent y.
+console.log(Math.pow(2, 3)); // Output: 8
+
+// 9. Math.random(): Returns a pseudo-random number between 0 (inclusive) and 1 (exclusive).
+// this is an important method and dev uses the most
+console.log(Math.random()); // Output: A random number between 0 and 1
+// some exaple of usage:
+// generate number between 10 to 20
+const min = 10
+const max = 20
+console.log(Math.floor(Math.random()*(max-min))+min); // Output: "Random number every time b/w 10-20"
+
+// 10. Math.max(x1, x2, ...): Returns the largest of zero or more numbers.
+console.log(Math.max(10, 20, 30)); // Output: 30
+
+// 11. Math.min(x1, x2, ...): Returns the smallest of zero or more numbers.
+console.log(Math.min(10, 20, 30)); // Output: 10
+
+// 12. Math.sin(x), Math.cos(x), Math.tan(x): Returns the sine, cosine, and tangent of an angle x (given in radians), respectively.
+console.log(Math.sin(Math.PI / 2)); // Output: 1 (sine of 90 degrees)
 
 // notes:
 // there are 2 things associated with Number object 1 is methods which have () at the end and the 2nd is property which does not have ()
+// there are lot more properties and methods in math object other than above mentioned
