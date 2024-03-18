@@ -71,4 +71,57 @@ console.log(Object.entries(tinderUser));// o/p: [ [ 'id', 'a1234d' ], [ 'name', 
 // checking if a key is present in an object
 console.log(tinderUser.hasOwnProperty("isLoggedIn")); // o/p: true
 
+// --------------------------objects de-structuring------------------------------------//
+
+// Object destructuring is a feature in JavaScript that allows you to extract multiple properties from an object and assign them to variables in a more concise and readable way. 
+const course = {
+    courseName: "js in hindi",
+    coursePrice: "999",
+    courseInstructor: "Hitesh Choudhary"
+}
+
+// so what we do generally to access the value of an object
+console.log(course.courseInstructor); // this is what we do but if we wanted to acces this value at 4 or 5 places then we have to write it again and again - course.courseInstructor <--- this line
+
+const {courseInstructor} = course
+//          what           from where
+// what = courseInstructor and from where = course
+
+console.log(courseInstructor);// o/p: Hitesh Choudhary
+// now we simply write courseInstructor to extract the value no need to write full line with dot operation
+
+// also we can add a temporary name to the key while destructuring eg:
+const {courseInstructor: instructor} = course
+//        what           identifier    where
+console.log(instructor); // o/p: Hitesh Choudhary
+
+// ------------------------------APIs---------------------------------------------//
+// jab kabhi bhi apna kaam dusro pal daal dete hai usi ko api kehte hai for eg: we have menu card in restaurant and we simply order something, we do not care how our order will be made and served everything is done by staff and chefs for example.
+// so here the menu card acts like as a api documentation and the chef serves as a api. chef will make the food as per the menu/order
+
+// api in general are the values coming from the backend. in older days values came in the form of XML but nowdays it comes in the form of JSON
+
+{} // this is our json, JSON in reality is an object which having no name -- now let's take an example
+
+// {
+//     "name": "Rishabh",
+//     "course": "js in hindi",
+//     "price": "free"
+// }
+// this is an json -- remember one thing here program will show error if we un-comment it but there is nothing wrong in these lines of json and other thing is that the keys of json are always in string format
+
+// sometimes we also get objects in the form of arrays, liek this:
+[
+    {
+
+    },
+    {
+        
+    }
+]
+
+
 // note: learn more about objects methods console window in browser
+// remember whenever we see {instructor} anything like this then it means object destructuring
+// object destructuring is used extensively in react and node
+// similar to object destructuring we also have array destructuring - will learn later
