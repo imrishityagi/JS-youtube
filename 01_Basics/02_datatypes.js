@@ -1,12 +1,15 @@
 "use strict" // this will treat all JS code as newer version of JS, and even if we don't write it than also the code will be treated as the newer version of js by default nowadays.
 
-// alert("Welcome") // we are using node Js, not the browser that's why we can't use alert this way. although there is a way to use alert in vs code or say in node, will discuss later 
+// alert("Welcome") // we are using node Js, not the browser that's why we can't use alert this way. although there is a way to use alert in node or vs code, will discuss later 
 
 // console.log( 3 + 3 ); console.log("rishabh") // this is not a right way to write the JS code; please maintain readablility of the code 
 // if we remove the semi-colon from 1st console.log statement then it will give us error
 // so better to write it in a proper way like:
 // console.log( 3 + 3 )
 // console.log("rishabh")
+// tc39.es --> is a website where all the original documents of ecma script are available
+// but generally this is only for understanding browser functionality and browser developers
+// instead of this we can use mdn
 
 let name = "rishabh" // string
 let age = 22 // number

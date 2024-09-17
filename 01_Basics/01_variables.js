@@ -20,7 +20,7 @@ accountPassword = "21212121";
 accountCity = "Pune";
 
 console.log(accountId);
-console.table([
+console.table([     // console.table is used to console multiple item at a time and it's type is object
   accountId,
   accountEmail,
   accountPassword,
