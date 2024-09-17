@@ -1,1 +1,1 @@
-# js-youtube
+# JS-youtube
